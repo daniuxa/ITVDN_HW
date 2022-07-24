@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\HW16(Essential).exe
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\HW16(Essential).deps.json
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\HW16(Essential).runtimeconfig.json
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\HW16(Essential).dll
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\ref\HW16(Essential).dll
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\bin\Debug\net6.0\HW16(Essential).pdb
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).dll
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\ref\HW16(Essential).dll
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).pdb
+C:\Users\saliv\source\repos\HW16(Essential)\HW16(Essential)\obj\Debug\net6.0\HW16(Essential).genruntimeconfig.cache

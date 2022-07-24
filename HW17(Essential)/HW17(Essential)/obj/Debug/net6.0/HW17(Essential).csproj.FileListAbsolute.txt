@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\HW17(Essential).exe
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\HW17(Essential).deps.json
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\HW17(Essential).runtimeconfig.json
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\HW17(Essential).dll
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\ref\HW17(Essential).dll
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\bin\Debug\net6.0\HW17(Essential).pdb
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).dll
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\ref\HW17(Essential).dll
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).pdb
+C:\Users\saliv\source\repos\HW17(Essential)\HW17(Essential)\obj\Debug\net6.0\HW17(Essential).genruntimeconfig.cache

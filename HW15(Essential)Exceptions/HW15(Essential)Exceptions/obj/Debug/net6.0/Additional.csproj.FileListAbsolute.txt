@@ -1,0 +1,14 @@
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\Additional.exe
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\Additional.deps.json
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\Additional.runtimeconfig.json
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\Additional.dll
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\ref\Additional.dll
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\bin\Debug\net6.0\Additional.pdb
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.dll
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\ref\Additional.dll
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.pdb
+C:\Users\saliv\source\repos\HW15(Essential)Exceptions\HW15(Essential)Exceptions\obj\Debug\net6.0\Additional.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\HW14(Essential)Collections1.exe
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\HW14(Essential)Collections1.deps.json
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\HW14(Essential)Collections1.runtimeconfig.json
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\HW14(Essential)Collections1.dll
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\ref\HW14(Essential)Collections1.dll
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\bin\Debug\net6.0\HW14(Essential)Collections1.pdb
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.dll
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\ref\HW14(Essential)Collections1.dll
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.pdb
+C:\Users\saliv\source\repos\HW14(Essential)Collections\HW14(Essential)Collections\obj\Debug\net6.0\HW14(Essential)Collections1.genruntimeconfig.cache

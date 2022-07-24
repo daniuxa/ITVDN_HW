@@ -1,0 +1,16 @@
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.csproj.SuggestedBindingRedirects.cache
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\MainWindow.g.cs
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\App.g.cs
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock_MarkupCompile.cache
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock_MarkupCompile.lref
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\bin\Debug\HW12(Essential)Clock.exe.config
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\bin\Debug\HW12(Essential)Clock.exe
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\bin\Debug\HW12(Essential)Clock.pdb
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\MainWindow.baml
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.g.resources
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12_Essential_Clock.Properties.Resources.resources
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.csproj.GenerateResource.cache
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.exe
+C:\Users\saliv\source\repos\HW12(Essential)Clock\HW12(Essential)Clock\obj\Debug\HW12(Essential)Clock.pdb
