@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "55f8cc41-6d57-4179-99d2-c7dc32d0f932": {
+      "ProjectGuid": "55f8cc41-6d57-4179-99d2-c7dc32d0f932",
+      "DisplayName": "HW18(Essential)",
+      "ColorIndex": 0
+    },
+    "ff40f5fb-af15-4316-ba62-8fd6a283ab86": {
+      "ProjectGuid": "ff40f5fb-af15-4316-ba62-8fd6a283ab86",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 1
+    },
+    "018649f6-1a26-494b-9f04-36ef79cabc92": {
+      "ProjectGuid": "018649f6-1a26-494b-9f04-36ef79cabc92",
+      "DisplayName": "ClassLibrary2",
+      "ColorIndex": 2
+    },
+    "0b232438-dc7a-41b8-9967-e2c1c01914b7": {
+      "ProjectGuid": "0b232438-dc7a-41b8-9967-e2c1c01914b7",
+      "DisplayName": "MyCollections",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,11 @@
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\bin\Debug\net6.0\ClassLibrary2.deps.json
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\bin\Debug\net6.0\ClassLibrary2.dll
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\bin\Debug\net6.0\ref\ClassLibrary2.dll
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\bin\Debug\net6.0\ClassLibrary2.pdb
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.dll
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ref\ClassLibrary2.dll
+C:\Users\saliv\source\repos\HW18(Essential)\ClassLibrary2\obj\Debug\net6.0\ClassLibrary2.pdb

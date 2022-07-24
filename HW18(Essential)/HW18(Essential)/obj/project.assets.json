@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "ClassLibrary1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        }
+      },
+      "MyCollections/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyCollections.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyCollections.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClassLibrary1/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary1/ClassLibrary1.csproj",
+      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
+    },
+    "MyCollections/1.0.0": {
+      "type": "project",
+      "path": "../MyCollections/MyCollections.csproj",
+      "msbuildProject": "../MyCollections/MyCollections.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ClassLibrary1 >= 1.0.0",
+      "MyCollections >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\saliv\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\HW18(Essential)\\HW18(Essential).csproj",
+      "projectName": "HW18(Essential)",
+      "projectPath": "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\HW18(Essential)\\HW18(Essential).csproj",
+      "packagesPath": "C:\\Users\\saliv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\HW18(Essential)\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\saliv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\ClassLibrary1\\ClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\ClassLibrary1\\ClassLibrary1.csproj"
+            },
+            "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\MyCollections\\MyCollections.csproj": {
+              "projectPath": "C:\\Users\\saliv\\source\\repos\\HW18(Essential)\\MyCollections\\MyCollections.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
