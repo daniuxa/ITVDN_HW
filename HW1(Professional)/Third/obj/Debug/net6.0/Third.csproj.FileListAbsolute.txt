@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\Third.exe
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\Third.deps.json
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\Third.runtimeconfig.json
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\Third.dll
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\ref\Third.dll
+C:\Users\saliv\source\repos\HW1(Professional)\Third\bin\Debug\net6.0\Third.pdb
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.dll
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\ref\Third.dll
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.pdb
+C:\Users\saliv\source\repos\HW1(Professional)\Third\obj\Debug\net6.0\Third.genruntimeconfig.cache
