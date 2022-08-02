@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ed39da0d-11bf-4f97-b753-0eb2e611e198": {
+      "ProjectGuid": "ed39da0d-11bf-4f97-b753-0eb2e611e198",
+      "DisplayName": "ExtraTask",
+      "ColorIndex": 0
+    },
+    "c7c52682-7ef7-4051-bd9a-c9a3ecab3b20": {
+      "ProjectGuid": "c7c52682-7ef7-4051-bd9a-c9a3ecab3b20",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    },
+    "59be60c4-98b9-4c9e-abd1-4dcff72b944f": {
+      "ProjectGuid": "59be60c4-98b9-4c9e-abd1-4dcff72b944f",
+      "DisplayName": "ThirdTask",
+      "ColorIndex": 2
+    },
+    "8912fc9b-fd5f-4ac4-b817-1b12526b9fe6": {
+      "ProjectGuid": "8912fc9b-fd5f-4ac4-b817-1b12526b9fe6",
+      "DisplayName": "FourthTask",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ExtraTask.exe
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ExtraTask.deps.json
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ExtraTask.runtimeconfig.json
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ExtraTask.dll
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ref\ExtraTask.dll
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\bin\Debug\net6.0\ExtraTask.pdb
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.dll
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ref\ExtraTask.dll
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.pdb
+C:\Users\saliv\source\repos\HW3(Professional)\HW3(Professional)\obj\Debug\net6.0\ExtraTask.genruntimeconfig.cache

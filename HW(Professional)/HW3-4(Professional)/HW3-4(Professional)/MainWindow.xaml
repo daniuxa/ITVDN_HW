@@ -1,0 +1,24 @@
+﻿<Window x:Class="HW3_4_Professional_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:HW3_4_Professional_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        >
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <xctk:ColorPicker Name="colorPicker" Margin="234,273,266,117" SelectedColorChanged="cp_SelectedColorChanged_1" Grid.Column="1"/>
+        <Button Content="Button" Name ="Btn1" HorizontalAlignment="Left" Margin="320,217,0,0" VerticalAlignment="Top" Height="37" Width="96" FontSize="20" Click="Button_Click" Grid.Column="1"/>
+        <Label Content="Label" Name ="Label1" HorizontalAlignment="Left" Margin="332,133,0,0" VerticalAlignment="Top" Height="46" Width="84" FontSize="24" Background="White" Grid.Column="1"/>
+    </Grid>
+    
+</Window>
+    
+    
