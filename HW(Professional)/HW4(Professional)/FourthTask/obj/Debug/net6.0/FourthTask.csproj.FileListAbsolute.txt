@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\FourthTask.exe
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\FourthTask.deps.json
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\FourthTask.runtimeconfig.json
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\FourthTask.dll
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\ref\FourthTask.dll
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\bin\Debug\net6.0\FourthTask.pdb
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.dll
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\ref\FourthTask.dll
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.pdb
+C:\Users\saliv\source\repos\HW4(Professional)\FourthTask\obj\Debug\net6.0\FourthTask.genruntimeconfig.cache

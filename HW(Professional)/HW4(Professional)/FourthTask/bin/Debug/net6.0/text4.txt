@@ -1,0 +1,4 @@
+Milk1;Amount 1;Price 50,5 UAH
+Milk2;Amount 2;Price 100 UAH
+Milk3;Amount 3;Price 150,5 UAH
+Milk4;Amount 4;Price 200 UAH

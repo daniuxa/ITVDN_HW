@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b218652e-ec31-4d48-82f3-ae27e6fbc90a": {
+      "ProjectGuid": "b218652e-ec31-4d48-82f3-ae27e6fbc90a",
+      "DisplayName": "ExtraTask",
+      "ColorIndex": 0
+    },
+    "3c80dbef-5d00-41a6-bec5-a55ad981fba8": {
+      "ProjectGuid": "3c80dbef-5d00-41a6-bec5-a55ad981fba8",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    },
+    "c564ee4e-4382-4128-b524-9ed34281bd2c": {
+      "ProjectGuid": "c564ee4e-4382-4128-b524-9ed34281bd2c",
+      "DisplayName": "ThirdTask",
+      "ColorIndex": 2
+    },
+    "b38fe020-ec45-49bd-b0bf-97a446159ae6": {
+      "ProjectGuid": "b38fe020-ec45-49bd-b0bf-97a446159ae6",
+      "DisplayName": "FourthTask",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
