@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\HW542(Professional).exe
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\HW542(Professional).deps.json
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\HW542(Professional).runtimeconfig.json
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\HW542(Professional).dll
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\ref\HW542(Professional).dll
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\bin\Debug\net6.0\HW542(Professional).pdb
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).dll
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\ref\HW542(Professional).dll
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).pdb
+C:\Users\saliv\source\repos\HW542(Professional)\HW542(Professional)\obj\Debug\net6.0\HW542(Professional).genruntimeconfig.cache
