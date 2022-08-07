@@ -1,0 +1,11 @@
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\bin\Debug\net6.0\SecondTaskDll.deps.json
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\bin\Debug\net6.0\SecondTaskDll.dll
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\bin\Debug\net6.0\ref\SecondTaskDll.dll
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\bin\Debug\net6.0\SecondTaskDll.pdb
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.dll
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\ref\SecondTaskDll.dll
+C:\Users\saliv\source\repos\HW6(Professional)\SecondTaskDll\obj\Debug\net6.0\SecondTaskDll.pdb

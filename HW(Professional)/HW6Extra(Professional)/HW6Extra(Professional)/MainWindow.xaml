@@ -1,0 +1,21 @@
+﻿<Window x:Class="HW6Extra_Professional_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW6Extra_Professional_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+        </Grid.Background>
+        <Button Name="OpenFileButton" Content="File" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.601,0.703" Height="26" Width="70" Click="OpenFileButton_Click"/>
+        <TextBlock Name="InfoFileTextBlock" HorizontalAlignment="Center" Margin="0,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="318" Width="780">
+            <TextBlock.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+    </Grid>
+</Window>

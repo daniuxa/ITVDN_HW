@@ -1,0 +1,16 @@
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\bin\Debug\HW6Extra(Professional).exe.config
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\bin\Debug\HW6Extra(Professional).exe
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\bin\Debug\HW6Extra(Professional).pdb
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).csproj.SuggestedBindingRedirects.cache
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\MainWindow.g.cs
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\App.g.cs
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional)_MarkupCompile.cache
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional)_MarkupCompile.lref
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\MainWindow.baml
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).g.resources
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra_Professional_.Properties.Resources.resources
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).csproj.GenerateResource.cache
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).exe
+C:\Users\saliv\source\repos\HW6Extra(Professional)\HW6Extra(Professional)\obj\Debug\HW6Extra(Professional).pdb
