@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3fe4a445-d13b-4672-8b79-10f82a5ef57b": {
+      "ProjectGuid": "3fe4a445-d13b-4672-8b79-10f82a5ef57b",
+      "DisplayName": "ExtraTask",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "99a92c16-a15e-4dbd-ba11-9d933e3f9cb3": {
+      "ProjectGuid": "99a92c16-a15e-4dbd-ba11-9d933e3f9cb3",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
