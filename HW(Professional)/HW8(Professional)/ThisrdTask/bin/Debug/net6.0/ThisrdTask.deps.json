@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ThisrdTask/1.0.0": {
+        "dependencies": {
+          "SecondTask": "1.0.0"
+        },
+        "runtime": {
+          "ThisrdTask.dll": {}
+        }
+      },
+      "SecondTask/1.0.0": {
+        "runtime": {
+          "SecondTask.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ThisrdTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecondTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
