@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ThirdTask.exe
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ThirdTask.deps.json
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ThirdTask.runtimeconfig.json
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ThirdTask.dll
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ref\ThirdTask.dll
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\bin\Debug\net6.0\ThirdTask.pdb
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.dll
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ref\ThirdTask.dll
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.pdb
+C:\Users\saliv\source\repos\HW12(Professional)\ThirdTask\obj\Debug\net6.0\ThirdTask.genruntimeconfig.cache

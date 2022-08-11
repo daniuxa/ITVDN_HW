@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9ab92823-e1b3-4d69-bcad-4dfd741c6e31": {
+      "ProjectGuid": "9ab92823-e1b3-4d69-bcad-4dfd741c6e31",
+      "DisplayName": "HW12(Professional)",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "3b5d712a-2ac4-466e-97a0-cfe3d417a8d4": {
+      "ProjectGuid": "3b5d712a-2ac4-466e-97a0-cfe3d417a8d4",
+      "DisplayName": "ThirdTask",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
