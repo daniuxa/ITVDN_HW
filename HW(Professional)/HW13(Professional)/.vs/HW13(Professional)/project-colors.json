@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3a1057b8-e5d9-4693-ade2-40a140e104e2": {
+      "ProjectGuid": "3a1057b8-e5d9-4693-ade2-40a140e104e2",
+      "DisplayName": "HW13(Professional)",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "6add0d3b-5a11-4f36-b310-f5971946f019": {
+      "ProjectGuid": "6add0d3b-5a11-4f36-b310-f5971946f019",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,11 @@
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\bin\Debug\HW13(Professional).exe.config
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\bin\Debug\HW13(Professional).exe
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\bin\Debug\HW13(Professional).pdb
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).csproj.SuggestedBindingRedirects.cache
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13_Professional_.Form1.resources
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13_Professional_.Properties.Resources.resources
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).csproj.GenerateResource.cache
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).exe
+C:\Users\saliv\source\repos\HW13(Professional)\HW13(Professional)\obj\Debug\HW13(Professional).pdb
