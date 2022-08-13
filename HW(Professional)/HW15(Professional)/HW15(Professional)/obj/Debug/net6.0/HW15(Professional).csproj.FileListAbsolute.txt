@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\HW15(Professional).exe
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\HW15(Professional).deps.json
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\HW15(Professional).runtimeconfig.json
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\HW15(Professional).dll
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\ref\HW15(Professional).dll
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\bin\Debug\net6.0\HW15(Professional).pdb
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).AssemblyInfo.cs
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).dll
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\ref\HW15(Professional).dll
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).pdb
+C:\Users\saliv\source\repos\HW15(Professional)\HW15(Professional)\obj\Debug\net6.0\HW15(Professional).genruntimeconfig.cache

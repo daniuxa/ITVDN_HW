@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48c0b64c-5976-44b2-ade6-ecddb3766898": {
+      "ProjectGuid": "48c0b64c-5976-44b2-ade6-ecddb3766898",
+      "DisplayName": "HW15(Professional)",
+      "ColorIndex": 0
+    },
+    "655ad4b3-2c0e-41cf-8383-7b4a8e6f9c6c": {
+      "ProjectGuid": "655ad4b3-2c0e-41cf-8383-7b4a8e6f9c6c",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,15 @@
+﻿<Window x:Class="SecondTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SecondTask"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="StateBlock" HorizontalAlignment="Center" Height="36" Margin="0,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Text="...."/>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="237,267,0,0" VerticalAlignment="Top" Height="41" Width="76" Click="ConnectButton_Click"/>
+        <Button x:Name="DisconnectButton" Content="Disconnect" HorizontalAlignment="Left" Margin="443,267,0,0" VerticalAlignment="Top" Height="41" Width="76" Click="DisconnectButton_Click"/>
+
+    </Grid>
+</Window>
