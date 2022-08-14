@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "625ad4a3-1aa4-4c19-82d3-44d515c56319": {
+      "ProjectGuid": "625ad4a3-1aa4-4c19-82d3-44d515c56319",
+      "DisplayName": "Installer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

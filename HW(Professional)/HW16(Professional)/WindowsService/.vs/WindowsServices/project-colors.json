@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4539d481-7a64-4d36-b339-d66ccc1c3e10": {
+      "ProjectGuid": "4539d481-7a64-4d36-b339-d66ccc1c3e10",
+      "DisplayName": "WindowsServices",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
