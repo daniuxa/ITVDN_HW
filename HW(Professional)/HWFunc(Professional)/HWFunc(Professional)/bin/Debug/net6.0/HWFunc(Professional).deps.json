@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HWFunc(Professional)/1.0.0": {
+        "runtime": {
+          "HWFunc(Professional).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HWFunc(Professional)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

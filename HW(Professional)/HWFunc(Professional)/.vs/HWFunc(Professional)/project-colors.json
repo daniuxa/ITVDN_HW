@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da67230e-b8f0-4970-90f9-51f4651bd267": {
+      "ProjectGuid": "da67230e-b8f0-4970-90f9-51f4651bd267",
+      "DisplayName": "HWFunc(Professional)",
+      "ColorIndex": 0
+    },
+    "1933b1c7-300d-442d-94ae-2276f21cc414": {
+      "ProjectGuid": "1933b1c7-300d-442d-94ae-2276f21cc414",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

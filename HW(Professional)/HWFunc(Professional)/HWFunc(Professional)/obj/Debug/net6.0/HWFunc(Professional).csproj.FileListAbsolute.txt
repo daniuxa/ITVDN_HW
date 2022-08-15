@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\HWFunc(Professional).exe
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\HWFunc(Professional).deps.json
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\HWFunc(Professional).runtimeconfig.json
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\HWFunc(Professional).dll
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\ref\HWFunc(Professional).dll
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\bin\Debug\net6.0\HWFunc(Professional).pdb
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).AssemblyInfo.cs
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).dll
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\ref\HWFunc(Professional).dll
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).pdb
+C:\Users\saliv\source\repos\HWFunc(Professional)\HWFunc(Professional)\obj\Debug\net6.0\HWFunc(Professional).genruntimeconfig.cache
