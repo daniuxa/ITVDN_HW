@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model2StoreContainer" CdmEntityContainer="Model2Container">
+    <EntitySetMapping Name="MyTable2Set">
+      <EntityTypeMapping TypeName="IsTypeOf(Model2.MyTable2)">
+        <MappingFragment StoreEntitySet="MyTable2Set">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SomeName" ColumnName="SomeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
