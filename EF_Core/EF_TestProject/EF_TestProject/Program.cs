@@ -1,35 +1,46 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+﻿using EF_TestProject;
+using Microsoft.EntityFrameworkCore;
 
-using var dbContext = new ApplicationContext();
-
-dbContext.Database.ExecuteSqlRaw("SELECT 1");
-
-Console.WriteLine();
-Console.WriteLine($"Имя провайдера БД: {dbContext.Database.ProviderName}.");
-Console.WriteLine();
-
-public class ApplicationContext : DbContext
+//Create empty DB
+using (ProjectContext projectContext = new ProjectContext())
 {
-   // public DbSet<User> Users => Set<User>();
-    public ApplicationContext() => Database.EnsureCreated();
+    projectContext.Database.EnsureDeleted();
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    projectContext.Database.EnsureCreated();
+}
+
+//Add some data
+using (ProjectContext projectContext = new ProjectContext())
+{
+    Authors author1 = new Authors() { FName = "1", LName = "1" };
+    Authors author2 = new Authors() { FName = "2", LName = "2" };
+
+    Books book1 = new Books() { Name = "1", PublishingYear = 2000 };
+    Books book2 = new Books() { Name = "2", PublishingYear = 2000 };
+
+    author1.books.Add(book1);
+    author1.books.Add(book2);
+
+    projectContext.Add(author1);
+    projectContext.Add(author2);
+
+    projectContext.SaveChanges();
+
+}
+
+//Read some data
+using (ProjectContext projectContext = new ProjectContext())
+{
+    var authors = projectContext.authors.Include(x => x.books).ToList();
+
+    foreach (var item in authors)
     {
-        // подключаемся к MS SQL Server БД, используя указанную строку подключения
-        optionsBuilder
-            // настраивает DbContext для подключения к MS SQL Server БД
-            .UseSqlServer(
-                @"Server=(localdb)\mssqllocaldb;Database=EfCoreBasicDb;Trusted_Connection=True;")
-            // включает более детальный вывод ошибок самого EF Core
-            .EnableDetailedErrors()
-            // включает вывод приватных данных приложения (таких как сгенерированные строки запроса, параметры этих строк запроса)
-            .EnableSensitiveDataLogging()
-            // логируем всё в консоль
-            // также дополнительно отфильтровываем логи, оставляем только запросы в БД
-            .LogTo(
-                Console.WriteLine,
-                new[] { DbLoggerCategory.Database.Command.Name },
-                LogLevel.Information);
+        Console.WriteLine($"{item.Id} {item.FName} {item.LName}: ");
+        foreach (var books in item.books)
+        {
+            Console.WriteLine(books.Id + " " + books.Name);
+        }
     }
 }
+
+
