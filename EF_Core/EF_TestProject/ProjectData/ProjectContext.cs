@@ -1,13 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ProjectDomain;
 
-namespace EF_TestProject
+namespace ProjectData
 {
-    class ProjectContext : DbContext
+    public class ProjectContext : DbContext
     {
         public DbSet<Authors> authors { get; set; }
         public DbSet<Books> books { get; set; }

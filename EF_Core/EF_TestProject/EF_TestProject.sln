@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_TestProject", "EF_TestProject\EF_TestProject.csproj", "{53372D4D-0008-496C-B41B-A120BBB54C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EF_TestProject", "EF_TestProject\EF_TestProject.csproj", "{53372D4D-0008-496C-B41B-A120BBB54C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectData", "ProjectData\ProjectData.csproj", "{8DA575A7-9073-40FD-B410-54D27BD6206B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectDomain", "ProjectDomain\ProjectDomain.csproj", "{3A136EA2-3EB9-416A-84F6-908C94F79EF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{53372D4D-0008-496C-B41B-A120BBB54C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53372D4D-0008-496C-B41B-A120BBB54C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53372D4D-0008-496C-B41B-A120BBB54C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA575A7-9073-40FD-B410-54D27BD6206B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA575A7-9073-40FD-B410-54D27BD6206B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA575A7-9073-40FD-B410-54D27BD6206B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA575A7-9073-40FD-B410-54D27BD6206B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A136EA2-3EB9-416A-84F6-908C94F79EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A136EA2-3EB9-416A-84F6-908C94F79EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A136EA2-3EB9-416A-84F6-908C94F79EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A136EA2-3EB9-416A-84F6-908C94F79EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

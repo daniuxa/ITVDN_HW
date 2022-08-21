@@ -1,0 +1,15 @@
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ProjectData.deps.json
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ProjectData.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ref\ProjectData.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ProjectData.pdb
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ProjectDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\bin\Debug\net6.0\ProjectDomain.pdb
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.AssemblyInfo.cs
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.csproj.CopyComplete
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ref\ProjectData.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\ProjectData\obj\Debug\net6.0\ProjectData.pdb

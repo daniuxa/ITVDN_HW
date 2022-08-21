@@ -54,3 +54,9 @@ C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\obj\D
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\obj\Debug\net6.0\ref\EF_TestProject.dll
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\obj\Debug\net6.0\EF_TestProject.pdb
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\obj\Debug\net6.0\EF_TestProject.genruntimeconfig.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\Humanizer.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\ProjectData.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\ProjectDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\ProjectData.pdb
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\EF_TestProject\EF_TestProject\bin\Debug\net6.0\ProjectDomain.pdb
