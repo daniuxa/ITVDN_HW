@@ -11,6 +11,7 @@ namespace ProjectData
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-HAL50HT;Database=Test1;Trusted_Connection=True;");
+
             #region Detailed connection
             /*// подключаемся к MS SQL Server БД, используя указанную строку подключения
         optionsBuilder
@@ -29,5 +30,6 @@ namespace ProjectData
                 LogLevel.Information);*/
             #endregion
         }
+
     }
 }

@@ -4,9 +4,9 @@ using ProjectData;
 
 CreateDB();
 
-AddInDB();
+//AddInDB();
 
-ReadFromDB();
+//ReadFromDB();
 
 void CreateDB()
 {

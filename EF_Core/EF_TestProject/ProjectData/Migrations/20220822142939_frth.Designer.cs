@@ -12,8 +12,8 @@ using ProjectData;
 namespace ProjectData.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20220821163952_initial")]
-    partial class initial
+    [Migration("20220822142939_frth")]
+    partial class frth
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,10 +33,17 @@ namespace ProjectData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("FName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MyProperty")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SomeNum")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
