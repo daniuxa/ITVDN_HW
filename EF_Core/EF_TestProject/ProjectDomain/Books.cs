@@ -10,6 +10,7 @@ namespace ProjectDomain
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int MyProperty { get; set; }
         public int PublishingYear { get; set; }
         Authors author { get; set; }
     }
