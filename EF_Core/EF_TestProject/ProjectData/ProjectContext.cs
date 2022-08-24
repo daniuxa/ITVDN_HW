@@ -31,5 +31,9 @@ namespace ProjectData
             #endregion
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Authors>().Property(x => x.LName).IsRequired();
+        }
     }
 }

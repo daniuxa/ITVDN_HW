@@ -10,7 +10,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Прочие файлы",
       "ColorIndex": -1
+    },
+    "8da575a7-9073-40fd-b410-54d27bd6206b": {
+      "ProjectGuid": "8da575a7-9073-40fd-b410-54d27bd6206b",
+      "DisplayName": "ProjectData",
+      "ColorIndex": 1
+    },
+    "3a136ea2-3eb9-416a-84f6-908c94f79ef0": {
+      "ProjectGuid": "3a136ea2-3eb9-416a-84f6-908c94f79ef0",
+      "DisplayName": "ProjectDomain",
+      "ColorIndex": 2
+    },
+    "d228f0fc-ca59-4a15-97b0-666da5b5798e": {
+      "ProjectGuid": "d228f0fc-ca59-4a15-97b0-666da5b5798e",
+      "DisplayName": "ScaffoldingTest",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }
