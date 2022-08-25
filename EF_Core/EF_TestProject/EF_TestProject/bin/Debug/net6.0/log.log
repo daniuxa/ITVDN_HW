@@ -1,0 +1,6 @@
+info: 26.08.2022 02:48:05.563 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[FName], [a].[LName], [a].[MyProperty], [a].[SomeNum], [b].[Id], [b].[AuthorId], [b].[AuthorsId], [b].[MyProperty], [b].[Name], [b].[PublishingYear]
+      FROM [authors] AS [a]
+      LEFT JOIN [books] AS [b] ON [a].[Id] = [b].[AuthorsId]
+      ORDER BY [a].[Id]
