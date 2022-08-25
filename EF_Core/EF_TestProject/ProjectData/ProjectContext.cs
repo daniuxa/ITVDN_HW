@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using ProjectDomain;
 
 namespace ProjectData
@@ -10,7 +11,8 @@ namespace ProjectData
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HAL50HT;Database=Test1;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HAL50HT;Database=Test1;Trusted_Connection=True;").
+                LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information);
 
             #region Detailed connection
             /*// подключаемся к MS SQL Server БД, используя указанную строку подключения
