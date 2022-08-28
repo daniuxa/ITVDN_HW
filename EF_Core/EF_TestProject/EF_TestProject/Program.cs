@@ -2,7 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using ProjectData;
 
-ManyToMany();
+//ManyToMany();
+
+//CreateDB();
 
 /*CreateDB();
 

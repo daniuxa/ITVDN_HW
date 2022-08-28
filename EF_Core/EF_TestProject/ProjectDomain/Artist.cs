@@ -12,6 +12,8 @@ namespace ProjectDomain
         public string FullName { get; set;}
         public List<Work> Works { get; set; }
 
+        public Authors Author { get; set; }
+
         public Artist()
         {
             Works = new List<Work>();   
