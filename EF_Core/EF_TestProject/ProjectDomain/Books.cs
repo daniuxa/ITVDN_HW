@@ -13,6 +13,6 @@ namespace ProjectDomain
         public int MyProperty { get; set; }
         public int PublishingYear { get; set; }
         Authors author { get; set; }
-        public int AuthorId { get; set; }
+        public int AuthorsId { get; set; }
     }
 }

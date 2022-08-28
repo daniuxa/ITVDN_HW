@@ -8,6 +8,8 @@ namespace ProjectData
     {
         public DbSet<Authors> authors { get; set; }
         public DbSet<Books> books { get; set; }
+        public DbSet<Work> works { get; set; }
+        public DbSet<Artist> artists { get; set; }
 
         //Only in one creation of DbContex session
         private StreamWriter streamWriter = new StreamWriter("log.log", append : false); 
