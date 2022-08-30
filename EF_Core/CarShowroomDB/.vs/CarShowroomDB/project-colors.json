@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "601aa092-0cb0-4577-8467-b36aefa478a1": {
+      "ProjectGuid": "601aa092-0cb0-4577-8467-b36aefa478a1",
+      "DisplayName": "CarShowroomDB",
+      "ColorIndex": 0
+    },
+    "3ce864d4-135c-4846-9505-df09136d4766": {
+      "ProjectGuid": "3ce864d4-135c-4846-9505-df09136d4766",
+      "DisplayName": "CarShowroomData",
+      "ColorIndex": 1
+    },
+    "e3786120-1e4a-4d71-ae31-cdf2eca1df5b": {
+      "ProjectGuid": "e3786120-1e4a-4d71-ae31-cdf2eca1df5b",
+      "DisplayName": "CarShowroomDomain",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

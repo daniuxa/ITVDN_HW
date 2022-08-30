@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using PubContext;
+
+using (CarShowroomContext context = new CarShowroomContext())
+{
+    context.Database.EnsureDeleted();
+    context.Database.EnsureCreated();
+}

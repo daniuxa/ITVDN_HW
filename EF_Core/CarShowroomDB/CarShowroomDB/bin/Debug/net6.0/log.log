@@ -1,0 +1,12 @@
+info: 30.08.2022 23:06:20.953 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (412ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [CarShowroomDB_EF];
+info: 30.08.2022 23:06:21.064 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (108ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [CarShowroomDB_EF] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: 30.08.2022 23:06:21.092 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
