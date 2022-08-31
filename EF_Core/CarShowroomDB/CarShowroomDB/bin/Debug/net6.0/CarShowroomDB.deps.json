@@ -1028,6 +1028,7 @@
       },
       "CarShowroomDBData/1.0.0": {
         "dependencies": {
+          "CarShowroomDomain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.Extensions.Configuration.UserSecrets": "5.0.0",
@@ -1035,6 +1036,11 @@
         },
         "runtime": {
           "CarShowroomDBData.dll": {}
+        }
+      },
+      "CarShowroomDomain/1.0.0": {
+        "runtime": {
+          "CarShowroomDomain.dll": {}
         }
       }
     }
@@ -1781,6 +1787,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "CarShowroomDBData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CarShowroomDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

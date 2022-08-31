@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5WHb+yqnzONO5yDNAh9tUjewzYzBCZUq6kFr6ADIzbEssVTJapQJqfpHH5+tWmR0+P9taHqFhZniSlAFEPy7ZA==",
+  "dgSpecHash": "zzR5hOuAT+eBNj9TJkrVHsf7lDV9LGXqlFKPGjjO0ZUj7J3x6F1GLGHJ8HIseMtJExtAHPj0PFMromssKeyeTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\saliv\\source\\repos\\ITVDN_HW\\EF_Core\\CarShowroomDB\\CarShowroomDBData\\CarShowroomDBData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saliv\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\saliv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",
+    "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.8\\microsoft.entityframeworkcore.design.6.0.8.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.8\\microsoft.entityframeworkcore.relational.6.0.8.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.8\\microsoft.entityframeworkcore.sqlserver.6.0.8.nupkg.sha512",
     "C:\\Users\\saliv\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",

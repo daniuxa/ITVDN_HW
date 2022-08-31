@@ -1,0 +1,12 @@
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\bin\Debug\net6.0\CarShowroomDomain.deps.json
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\bin\Debug\net6.0\CarShowroomDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\bin\Debug\net6.0\ref\CarShowroomDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\bin\Debug\net6.0\CarShowroomDomain.pdb
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.csproj.AssemblyReference.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.AssemblyInfoInputs.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.AssemblyInfo.cs
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.csproj.CoreCompileInputs.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\ref\CarShowroomDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDomain\obj\Debug\net6.0\CarShowroomDomain.pdb

@@ -1,12 +1,66 @@
-info: 30.08.2022 23:06:20.953 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (412ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+info: 31.08.2022 22:39:55.187 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 31.08.2022 22:39:55.304 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [CarShowroomDB_EF] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+      END;
+info: 31.08.2022 22:39:55.336 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      DROP DATABASE [CarShowroomDB_EF];
+info: 31.08.2022 22:39:55.717 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
       CREATE DATABASE [CarShowroomDB_EF];
-info: 30.08.2022 23:06:21.064 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (108ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+info: 31.08.2022 22:39:55.751 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
       IF SERVERPROPERTY('EngineEdition') <> 5
       BEGIN
           ALTER DATABASE [CarShowroomDB_EF] SET READ_COMMITTED_SNAPSHOT ON;
       END;
-info: 30.08.2022 23:06:21.092 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: 31.08.2022 22:39:55.756 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT 1
+info: 31.08.2022 22:39:55.857 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Automobiles] (
+          [VIN] nvarchar(17) NOT NULL,
+          [ProdDate] datetime2 NOT NULL DEFAULT '2022-08-31T22:39:55.5221998+03:00',
+          [BodyType] nvarchar(max) NOT NULL,
+          [Color] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_Automobiles] PRIMARY KEY ([VIN])
+      );
+info: 31.08.2022 22:39:55.859 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Clients] (
+          [ClientId] int NOT NULL IDENTITY,
+          [FName] nvarchar(max) NOT NULL,
+          [MName] nvarchar(max) NOT NULL,
+          [LName] nvarchar(max) NOT NULL,
+          [Phone] nvarchar(15) NOT NULL,
+          [Email] nvarchar(max) NULL,
+          CONSTRAINT [PK_Clients] PRIMARY KEY ([ClientId]),
+          CONSTRAINT [CK_Clients_Email] CHECK (Email LIKE '%@%.%'),
+          CONSTRAINT [CK_Clients_Phone] CHECK (Phone LIKE '(0[0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')
+      );
+info: 31.08.2022 22:39:55.862 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Orders] (
+          [OrderId] int NOT NULL IDENTITY,
+          [OrderDateTime] datetime2 NOT NULL DEFAULT '2022-08-31T22:39:55.5222791+03:00',
+          [Status] nvarchar(max) NOT NULL,
+          [PaymentMethod] nvarchar(max) NOT NULL,
+          [PurchaseDateTime] datetime2 NOT NULL,
+          [ClientId] int NOT NULL,
+          [VinAuto] nvarchar(17) NOT NULL,
+          CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId]),
+          CONSTRAINT [FK_Orders_Automobiles_VinAuto] FOREIGN KEY ([VinAuto]) REFERENCES [Automobiles] ([VIN]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Orders_Clients_ClientId] FOREIGN KEY ([ClientId]) REFERENCES [Clients] ([ClientId]) ON DELETE CASCADE
+      );
+info: 31.08.2022 22:39:55.864 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Orders_ClientId] ON [Orders] ([ClientId]);
+info: 31.08.2022 22:39:55.865 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Orders_VinAuto] ON [Orders] ([VinAuto]);

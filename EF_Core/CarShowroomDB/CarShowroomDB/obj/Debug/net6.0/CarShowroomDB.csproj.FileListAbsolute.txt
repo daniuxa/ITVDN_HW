@@ -70,3 +70,5 @@ C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\obj\Deb
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\obj\Debug\net6.0\ref\CarShowroomDB.dll
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\obj\Debug\net6.0\CarShowroomDB.pdb
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\obj\Debug\net6.0\CarShowroomDB.genruntimeconfig.cache
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\CarShowroomDomain.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\CarShowroomDomain.pdb
