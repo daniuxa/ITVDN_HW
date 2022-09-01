@@ -1039,6 +1039,9 @@
         }
       },
       "CarShowroomDomain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8"
+        },
         "runtime": {
           "CarShowroomDomain.dll": {}
         }

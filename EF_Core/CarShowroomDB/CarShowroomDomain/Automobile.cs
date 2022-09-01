@@ -17,5 +17,15 @@ namespace CarShowroomDomain
         public string BodyType { get; set; }
         public string Color { get; set; }
         public List<Order> Orders { get; set; }
+        public List<CarShowroom> CarShowrooms { get; set; }
+        public List<Avaibility> Avaibilities { get; set; }
+        public Brand Brand { get; set; }
+        public int BrandId { get; set; }
+
+        public Model Model { get; set; }
+        public int ModelId { get; set; }
+
+        public Equipment Equipment { get; set; }
+        public int EquipmentId { get; set; }    
     }
 }

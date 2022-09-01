@@ -15,7 +15,17 @@
       "ProjectGuid": "e3786120-1e4a-4d71-ae31-cdf2eca1df5b",
       "DisplayName": "CarShowroomDomain",
       "ColorIndex": 2
+    },
+    "28aa79c9-ae9b-4b16-81a9-e5be60fbe3f5": {
+      "ProjectGuid": "28aa79c9-ae9b-4b16-81a9-e5be60fbe3f5",
+      "DisplayName": "CarShowroomDBData",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

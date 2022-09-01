@@ -14,8 +14,6 @@ namespace CarShowroomDomain
         public int OrderId { get; set; }
 
         [Required]
-        //[DefaultValue("GETDATE()")]
-        //[SqlDefaultValue(DefaultValue = "GETDATE()")]
         public DateTime OrderDateTime { get; set; }
 
         [Required]
@@ -33,5 +31,7 @@ namespace CarShowroomDomain
         public string VinAuto { get; set; }
         [ForeignKey("VinAuto")]
         public Automobile Automobile { get; set; }
+
+        public List<Worker> Workers { get; set; }
     }
 }

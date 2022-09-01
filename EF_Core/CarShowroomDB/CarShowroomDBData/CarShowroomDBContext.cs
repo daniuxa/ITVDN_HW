@@ -10,6 +10,14 @@ namespace PubContext
         public DbSet<Client> Clients { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Automobile> Automobiles { get; set; }
+        public DbSet<Worker> Workers { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Avaibility> Avaibilities { get; set;}
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Engine> Engines { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Equipment> Equipments { get; set; }
 
         private StreamWriter streamWriter = new StreamWriter("log.log", append: false);
 
