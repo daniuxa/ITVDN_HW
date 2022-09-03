@@ -72,7 +72,17 @@ namespace CarShowroomDB
 
         static public void SelectFst()
         {
-
+            using (CarShowroomContext context = new CarShowroomContext())
+            {
+                var Distinct = context.Automobiles.Select(y => new
+                {
+                    BodyType = y.BodyType
+                }).Distinct();
+                foreach (var item in Distinct)
+                {
+                    Console.WriteLine(item.BodyType);
+                }
+            }
         }
     }
 }

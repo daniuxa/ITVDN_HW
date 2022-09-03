@@ -1,8 +1,8 @@
 ﻿using CarShowroomDbData;
 using CarShowroomDB;
 
-DMLCommands.Add();
-
+//DMLCommands.Add();
+DMLCommands.SelectFst();
 /*using (CarShowroomContext context = new CarShowroomContext())
 {
     context.Database.EnsureDeleted();
