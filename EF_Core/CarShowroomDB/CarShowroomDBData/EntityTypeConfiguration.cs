@@ -87,7 +87,7 @@ namespace CarShowroomDBData
     {
         public void Configure(EntityTypeBuilder<Equipment> builder)
         {
-            builder.HasOne(x => x.Model).WithMany().OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(x => x.Model).WithMany(y => y.Equipments).OnDelete(DeleteBehavior.Restrict);
         }
     }
 

@@ -1,7 +1,10 @@
-﻿using PubContext;
+﻿using CarShowroomDbData;
+using CarShowroomDB;
 
-using (CarShowroomContext context = new CarShowroomContext())
+DMLCommands.Add();
+
+/*using (CarShowroomContext context = new CarShowroomContext())
 {
     context.Database.EnsureDeleted();
-    //context.Database.EnsureCreated();
-}
+    context.Database.EnsureCreated();
+}*/

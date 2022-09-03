@@ -16,5 +16,11 @@ namespace CarShowroomDomain
         public string ProdYearTo { get; set; }
         public Brand Brand { get; set; }
         public int BrandId { get; set; }
+        public List<Equipment> Equipments { get; set; }
+
+        public Model()
+        {
+            Equipments = new List<Equipment>();
+        }
     }
 }

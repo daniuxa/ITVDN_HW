@@ -17,5 +17,11 @@ namespace CarShowroomDomain
         public Company Company { get; set; }
         public int CompanyId { get; set; }
 
+        public List<Model> Models { get; set; }
+
+        public Brand()
+        {
+            Models = new List<Model>();
+        }
     }
 }

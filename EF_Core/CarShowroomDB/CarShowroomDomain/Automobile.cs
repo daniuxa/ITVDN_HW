@@ -26,6 +26,13 @@ namespace CarShowroomDomain
         public int ModelId { get; set; }
 
         public Equipment Equipment { get; set; }
-        public int EquipmentId { get; set; }    
+        public int EquipmentId { get; set; }
+
+        public Automobile()
+        {
+            Orders = new List<Order>();
+            CarShowrooms = new List<CarShowroom>();
+            Avaibilities = new List<Avaibility>();
+        }
     }
 }

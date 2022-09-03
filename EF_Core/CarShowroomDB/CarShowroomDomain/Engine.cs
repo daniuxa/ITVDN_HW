@@ -18,6 +18,11 @@ namespace CarShowroomDomain
         public string FuelType { get; set; }
         public Company Company { get; set; }
         public int CompanyId { get; set; }
+        public List<Equipment> Equipments { get; set; }
 
+        public Engine()
+        {
+            Equipments = new List<Equipment>();
+        }
     }
 }

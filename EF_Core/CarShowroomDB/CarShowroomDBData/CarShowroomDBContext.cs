@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace PubContext
+namespace CarShowroomDbData
 {
     public class CarShowroomContext : DbContext
     {
