@@ -1,0 +1,16 @@
+info: 05.09.2022 01:51:14.935 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Automobiles] AS [a]
+info: 05.09.2022 01:51:15.093 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT MIN([e].[Price])
+      FROM [Equipments] AS [e]
+info: 05.09.2022 01:51:15.115 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT MAX([e].[Price])
+      FROM [Equipments] AS [e]
+info: 05.09.2022 01:51:15.134 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT AVG([e].[Price])
+      FROM [Equipments] AS [e]

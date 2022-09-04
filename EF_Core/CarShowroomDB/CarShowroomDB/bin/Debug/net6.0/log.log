@@ -1,4 +1,30 @@
-info: 03.09.2022 19:41:55.255 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: 04.09.2022 15:09:14.918 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT DISTINCT [a].[BodyType]
       FROM [Automobiles] AS [a]
+info: 04.09.2022 15:09:15.002 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[@__p_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[VIN], [a].[BodyType], [a].[BrandId], [a].[Color], [a].[EquipmentId], [a].[ModelId], [a].[ProdDate]
+      FROM [Automobiles] AS [a]
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+info: 04.09.2022 15:09:15.113 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[VIN], [a].[BodyType], [a].[BrandId], [a].[Color], [a].[EquipmentId], [a].[ModelId], [a].[ProdDate], [b].[BrandId], [b].[CompanyId], [b].[CompanyName], [b].[Name]
+      FROM [Automobiles] AS [a]
+      INNER JOIN [Brands] AS [b] ON [a].[BrandId] = [b].[BrandId]
+info: 04.09.2022 15:11:18.613 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT DISTINCT [a].[BodyType]
+      FROM [Automobiles] AS [a]
+info: 04.09.2022 15:11:18.693 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (21ms) [Parameters=[@__p_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[VIN], [a].[BodyType], [a].[BrandId], [a].[Color], [a].[EquipmentId], [a].[ModelId], [a].[ProdDate]
+      FROM [Automobiles] AS [a]
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+info: 04.09.2022 15:11:18.856 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[VIN], [a].[BodyType], [a].[BrandId], [a].[Color], [a].[EquipmentId], [a].[ModelId], [a].[ProdDate], [b].[BrandId], [b].[CompanyId], [b].[CompanyName], [b].[Name]
+      FROM [Automobiles] AS [a]
+      INNER JOIN [Brands] AS [b] ON [a].[BrandId] = [b].[BrandId]

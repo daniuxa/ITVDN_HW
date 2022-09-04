@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarShowroomDB
 {
@@ -70,6 +71,15 @@ namespace CarShowroomDB
 
         }
 
+        static public void Update()
+        {
+            using (CarShowroomContext context = new CarShowroomContext())
+            {
+                var automobiles = context.Automobiles;
+                Automobile? automobile = automobiles.Where(x => x.Color == "Black").FirstOrDefault();
+                automobile.Color = "Blue";
+            }
+        }
         static public void SelectFst()
         {
             using (CarShowroomContext context = new CarShowroomContext())
@@ -78,10 +88,113 @@ namespace CarShowroomDB
                 {
                     BodyType = y.BodyType
                 }).Distinct();
+
                 foreach (var item in Distinct)
                 {
                     Console.WriteLine(item.BodyType);
                 }
+
+                Console.WriteLine(new String('-', 40));
+
+                var Second = context.Automobiles.Skip(1).Take(1);
+                foreach (var item in Second)
+                {
+                    Console.WriteLine(item.BodyType);
+                }
+
+                Console.WriteLine(new String('-', 40));
+
+                var third = context.Automobiles.Include(x => x.Brand).Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1));
+
+                foreach (var item in third)
+                {
+                    Console.WriteLine(item.Brand.Name);
+                }
+
+                Console.WriteLine(new String('-', 40));
+
+                //var frth = context.Automobiles.Join().Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1));
+                var frth = from automobile in context.Automobiles
+                           join brand in context.Brands on automobile.BrandId equals brand.BrandId
+                           where automobile.ProdDate < DateTime.Now && automobile.ProdDate > new DateTime(2020, 1, 1)
+                           select new
+                           {
+                               BrandName = brand.Name
+                           };
+                foreach (var item in frth)
+                {
+                    Console.WriteLine(item.BrandName);
+                }
+
+                Console.WriteLine(new String('-', 40));
+
+                var fifth = context.Automobiles.Include(x => x.Brand).Where(x => EF.Functions.Like(x.BodyType, "Se%"));
+
+                foreach (var item in fifth)
+                {
+                    Console.WriteLine(item.Brand.Name);
+                }
+            }
+        }
+
+        static public void SelectSnd()
+        {
+            using (CarShowroomContext context = new CarShowroomContext())
+            {
+                var Union = context.Automobiles.Select(p => new { ProdYear = p.ProdDate.Year}).Union(context.Models.Select(y => new {ProdYear = y.ProdYearFrom}));
+
+                foreach (var item in Union)
+                {
+                    Console.WriteLine(item.ProdYear);
+                }
+
+                Console.WriteLine(new String('-', 40));
+
+                var GroupBy = from company in context.Companies
+                              join brand in context.Brands on company.Name equals brand.Company.Name
+                              group company by company.Name into g
+                              select new
+                              {
+                                  g.Key,
+                                  Count = g.Count()
+                              };
+                foreach (var item in GroupBy)
+                {
+                    Console.WriteLine(item.Key + " " + item.Count);
+                }
+
+                Console.WriteLine(new String('-', 40));
+
+                var GroupByInclude = context.Companies.Include(x => x.Brands).GroupBy(x => x.Name).Select(x => new
+                {
+                    Key = x.Key,
+                    Count = x.Count()
+                });
+            
+                foreach (var item in GroupByInclude)
+                {
+                    Console.WriteLine(item.Key + " " + item.Count);
+                }
+            }
+        }
+
+        static public void SelectAgregate()
+        {
+            using (CarShowroomContext context = new CarShowroomContext())
+            {
+                int AmountCars = context.Automobiles.Count();
+                Console.WriteLine(AmountCars);
+
+                Console.WriteLine(new String('-', 80));
+
+                int MinPrice = (int)context.Equipments.Min(x => x.Price);
+                int MaxPrice = (int)context.Equipments.Max(x => x.Price);
+                int AvgPrice = (int)context.Equipments.Average(x => x.Price);
+                int SumPrice = (int)context.Equipments.Sum(x => x.Price);
+                Console.WriteLine("Min: " + MinPrice);
+                Console.WriteLine("Max: " + MaxPrice);
+                Console.WriteLine("Avg: " + AvgPrice);
+                Console.WriteLine("Sum: " + SumPrice);
             }
         }
     }

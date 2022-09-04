@@ -20,7 +20,7 @@ namespace CarShowroomDbData
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<HeadManager> HeadManagers { get; set; }
 
-        private StreamWriter streamWriter = new StreamWriter("log.log", append: false);
+        private StreamWriter streamWriter = new StreamWriter("InfoLogs.log", append: false);
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
