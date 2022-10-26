@@ -1,12 +1,12 @@
 ﻿using CarShowroomDbData;
 using CarShowroomDB;
 
-DMLCommands.SelectAgregate();
+//DMLCommands.SelectAgregate();
 //DMLCommands.Add();
 //DMLCommands.SelectFst();
 //DMLCommands.SelectSnd();
-/*using (CarShowroomContext context = new CarShowroomContext())
+using (CarShowroomContext context = new CarShowroomContext())
 {
     context.Database.EnsureDeleted();
     context.Database.EnsureCreated();
-}*/
+}

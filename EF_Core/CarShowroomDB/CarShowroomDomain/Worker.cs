@@ -29,6 +29,8 @@ namespace CarShowroomDomain
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
 
+        public List<Department> DepartmentsHead { get; set; }
+
         public List<Order> Orders { get; set; }
         public List<CarShowroom> CarShowrooms { get; set; }
     }

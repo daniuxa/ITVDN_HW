@@ -9,7 +9,7 @@ namespace CarShowroomDomain
 {
     public class Automobile
     {
-        [Key]
+        //[Key]
         [MaxLength(17)]
         [MinLength(17)]
         public string VIN { get; set; }

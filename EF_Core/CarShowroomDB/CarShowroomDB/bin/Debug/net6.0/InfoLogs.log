@@ -1,16 +1,237 @@
-info: 05.09.2022 01:51:14.935 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT COUNT(*)
-      FROM [Automobiles] AS [a]
-info: 05.09.2022 01:51:15.093 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT MIN([e].[Price])
-      FROM [Equipments] AS [e]
-info: 05.09.2022 01:51:15.115 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+info: 26.10.2022 09:09:13.733 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 26.10.2022 09:09:16.848 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3,015ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [CarShowroomDB_EF] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+      END;
+info: 26.10.2022 09:09:16.868 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      DROP DATABASE [CarShowroomDB_EF];
+info: 26.10.2022 09:09:17.255 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (208ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [CarShowroomDB_EF];
+info: 26.10.2022 09:09:17.292 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [CarShowroomDB_EF] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+info: 26.10.2022 09:09:17.301 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+info: 26.10.2022 09:09:17.417 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT MAX([e].[Price])
-      FROM [Equipments] AS [e]
-info: 05.09.2022 01:51:15.134 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      SELECT AVG([e].[Price])
-      FROM [Equipments] AS [e]
+      CREATE TABLE [CarShowroom] (
+          [CarShowroomId] int NOT NULL IDENTITY,
+          [City] nvarchar(max) NOT NULL,
+          [Street] nvarchar(max) NOT NULL,
+          [House] nvarchar(max) NOT NULL,
+          CONSTRAINT [PK_CarShowroom] PRIMARY KEY ([CarShowroomId])
+      );
+info: 26.10.2022 09:09:17.419 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Clients] (
+          [ClientId] int NOT NULL IDENTITY,
+          [FName] nvarchar(max) NOT NULL,
+          [MName] nvarchar(max) NOT NULL,
+          [LName] nvarchar(max) NOT NULL,
+          [Phone] nvarchar(15) NOT NULL,
+          [Email] nvarchar(max) NULL,
+          CONSTRAINT [PK_Clients] PRIMARY KEY ([ClientId]),
+          CONSTRAINT [CK_Clients_Email] CHECK (Email LIKE '%@%.%'),
+          CONSTRAINT [CK_Clients_Phone] CHECK (Phone LIKE '(0[0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]')
+      );
+info: 26.10.2022 09:09:17.420 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Companies] (
+          [Name] nvarchar(450) NOT NULL,
+          [SiteComp] nvarchar(max) NULL,
+          CONSTRAINT [PK_Companies] PRIMARY KEY ([Name])
+      );
+info: 26.10.2022 09:09:17.422 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Brands] (
+          [BrandId] int NOT NULL IDENTITY,
+          [Name] nvarchar(450) NOT NULL,
+          [CompanyName] nvarchar(450) NOT NULL,
+          [CompanyId] int NOT NULL,
+          CONSTRAINT [PK_Brands] PRIMARY KEY ([BrandId]),
+          CONSTRAINT [FK_Brands_Companies_CompanyName] FOREIGN KEY ([CompanyName]) REFERENCES [Companies] ([Name]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.424 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Engines] (
+          [EngineId] int NOT NULL IDENTITY,
+          [Name] nvarchar(450) NOT NULL,
+          [EngineCapacity] float NOT NULL,
+          [Power] int NOT NULL DEFAULT 0,
+          [FuelType] nvarchar(max) NOT NULL,
+          [CompanyName] nvarchar(450) NULL,
+          [CompanyId] int NOT NULL,
+          CONSTRAINT [PK_Engines] PRIMARY KEY ([EngineId]),
+          CONSTRAINT [FK_Engines_Companies_CompanyName] FOREIGN KEY ([CompanyName]) REFERENCES [Companies] ([Name])
+      );
+info: 26.10.2022 09:09:17.425 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Models] (
+          [ModelId] int NOT NULL IDENTITY,
+          [Name] nvarchar(max) NOT NULL,
+          [ProdYearFrom] int NOT NULL,
+          [ProdYearTo] nvarchar(max) NOT NULL,
+          [BrandId] int NOT NULL,
+          CONSTRAINT [PK_Models] PRIMARY KEY ([ModelId]),
+          CONSTRAINT [FK_Models_Brands_BrandId] FOREIGN KEY ([BrandId]) REFERENCES [Brands] ([BrandId]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.426 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Equipments] (
+          [EquipmentId] int NOT NULL IDENTITY,
+          [Name] nvarchar(max) NOT NULL,
+          [Price] money NOT NULL,
+          [Gearbox] nvarchar(max) NOT NULL,
+          [Transmission] nvarchar(max) NOT NULL,
+          [EngineId] int NOT NULL,
+          [ModelId] int NOT NULL,
+          CONSTRAINT [PK_Equipments] PRIMARY KEY ([EquipmentId]),
+          CONSTRAINT [FK_Equipments_Engines_EngineId] FOREIGN KEY ([EngineId]) REFERENCES [Engines] ([EngineId]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Equipments_Models_ModelId] FOREIGN KEY ([ModelId]) REFERENCES [Models] ([ModelId]) ON DELETE NO ACTION
+      );
+info: 26.10.2022 09:09:17.428 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Automobiles] (
+          [VIN] nvarchar(17) NOT NULL,
+          [ProdDate] datetime2 NOT NULL DEFAULT '2022-10-26T09:09:17.0225523+03:00',
+          [BodyType] nvarchar(max) NOT NULL,
+          [Color] nvarchar(max) NOT NULL,
+          [BrandId] int NOT NULL,
+          [ModelId] int NOT NULL,
+          [EquipmentId] int NOT NULL,
+          CONSTRAINT [PK_Automobiles] PRIMARY KEY ([VIN]),
+          CONSTRAINT [FK_Automobiles_Brands_BrandId] FOREIGN KEY ([BrandId]) REFERENCES [Brands] ([BrandId]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Automobiles_Equipments_EquipmentId] FOREIGN KEY ([EquipmentId]) REFERENCES [Equipments] ([EquipmentId]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Automobiles_Models_ModelId] FOREIGN KEY ([ModelId]) REFERENCES [Models] ([ModelId]) ON DELETE NO ACTION
+      );
+info: 26.10.2022 09:09:17.430 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Avaibilities] (
+          [VINAuto] nvarchar(17) NOT NULL,
+          [CarShowroomId] int NOT NULL,
+          CONSTRAINT [PK_Avaibilities] PRIMARY KEY ([CarShowroomId], [VINAuto]),
+          CONSTRAINT [FK_Avaibilities_Automobiles_VINAuto] FOREIGN KEY ([VINAuto]) REFERENCES [Automobiles] ([VIN]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Avaibilities_CarShowroom_CarShowroomId] FOREIGN KEY ([CarShowroomId]) REFERENCES [CarShowroom] ([CarShowroomId]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.432 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Orders] (
+          [OrderId] int NOT NULL IDENTITY,
+          [OrderDateTime] datetime2 NOT NULL DEFAULT '2022-10-26T09:09:17.0256844+03:00',
+          [Status] nvarchar(max) NOT NULL,
+          [PaymentMethod] nvarchar(max) NOT NULL,
+          [PurchaseDateTime] datetime2 NOT NULL,
+          [ClientId] int NOT NULL,
+          [VinAuto] nvarchar(17) NOT NULL,
+          CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId]),
+          CONSTRAINT [FK_Orders_Automobiles_VinAuto] FOREIGN KEY ([VinAuto]) REFERENCES [Automobiles] ([VIN]) ON DELETE CASCADE,
+          CONSTRAINT [FK_Orders_Clients_ClientId] FOREIGN KEY ([ClientId]) REFERENCES [Clients] ([ClientId]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.433 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [CarShowroomWorker] (
+          [CarShowroomsCarShowroomId] int NOT NULL,
+          [WorkersWorkerId] int NOT NULL,
+          CONSTRAINT [PK_CarShowroomWorker] PRIMARY KEY ([CarShowroomsCarShowroomId], [WorkersWorkerId]),
+          CONSTRAINT [FK_CarShowroomWorker_CarShowroom_CarShowroomsCarShowroomId] FOREIGN KEY ([CarShowroomsCarShowroomId]) REFERENCES [CarShowroom] ([CarShowroomId]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.435 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Departments] (
+          [DepartmentId] int NOT NULL IDENTITY,
+          [Name] nvarchar(max) NOT NULL,
+          [HeadManagerId] int NOT NULL,
+          CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+      );
+info: 26.10.2022 09:09:17.438 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Workers] (
+          [WorkerId] int NOT NULL IDENTITY,
+          [FName] nvarchar(max) NOT NULL,
+          [MName] nvarchar(max) NOT NULL,
+          [LName] nvarchar(max) NOT NULL,
+          [Phone] nvarchar(max) NOT NULL,
+          [Salary] money NOT NULL,
+          [BirthDate] datetime2 NOT NULL,
+          [DepartmentId] int NOT NULL,
+          CONSTRAINT [PK_Workers] PRIMARY KEY ([WorkerId]),
+          CONSTRAINT [CK_Workers_Phone] CHECK (Phone LIKE '(0[0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'),
+          CONSTRAINT [CK_Workers_Salary] CHECK (Salary > 0),
+          CONSTRAINT [FK_Workers_Departments_DepartmentId] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId]) ON DELETE NO ACTION
+      );
+info: 26.10.2022 09:09:17.439 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [OrderWorker] (
+          [OrdersOrderId] int NOT NULL,
+          [WorkersWorkerId] int NOT NULL,
+          CONSTRAINT [PK_OrderWorker] PRIMARY KEY ([OrdersOrderId], [WorkersWorkerId]),
+          CONSTRAINT [FK_OrderWorker_Orders_OrdersOrderId] FOREIGN KEY ([OrdersOrderId]) REFERENCES [Orders] ([OrderId]) ON DELETE CASCADE,
+          CONSTRAINT [FK_OrderWorker_Workers_WorkersWorkerId] FOREIGN KEY ([WorkersWorkerId]) REFERENCES [Workers] ([WorkerId]) ON DELETE CASCADE
+      );
+info: 26.10.2022 09:09:17.440 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Automobiles_BrandId] ON [Automobiles] ([BrandId]);
+info: 26.10.2022 09:09:17.441 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Automobiles_EquipmentId] ON [Automobiles] ([EquipmentId]);
+info: 26.10.2022 09:09:17.442 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Automobiles_ModelId] ON [Automobiles] ([ModelId]);
+info: 26.10.2022 09:09:17.443 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Avaibilities_VINAuto] ON [Avaibilities] ([VINAuto]);
+info: 26.10.2022 09:09:17.443 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Brands_CompanyName] ON [Brands] ([CompanyName]);
+info: 26.10.2022 09:09:17.444 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Brands_Name] ON [Brands] ([Name]);
+info: 26.10.2022 09:09:17.444 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_CarShowroomWorker_WorkersWorkerId] ON [CarShowroomWorker] ([WorkersWorkerId]);
+info: 26.10.2022 09:09:17.445 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Departments_HeadManagerId] ON [Departments] ([HeadManagerId]);
+info: 26.10.2022 09:09:17.446 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Engines_CompanyName] ON [Engines] ([CompanyName]);
+info: 26.10.2022 09:09:17.446 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX [IX_Engines_Name] ON [Engines] ([Name]);
+info: 26.10.2022 09:09:17.447 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Equipments_EngineId] ON [Equipments] ([EngineId]);
+info: 26.10.2022 09:09:17.447 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Equipments_ModelId] ON [Equipments] ([ModelId]);
+info: 26.10.2022 09:09:17.448 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Models_BrandId] ON [Models] ([BrandId]);
+info: 26.10.2022 09:09:17.448 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Orders_ClientId] ON [Orders] ([ClientId]);
+info: 26.10.2022 09:09:17.449 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Orders_VinAuto] ON [Orders] ([VinAuto]);
+info: 26.10.2022 09:09:17.449 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_OrderWorker_WorkersWorkerId] ON [OrderWorker] ([WorkersWorkerId]);
+info: 26.10.2022 09:09:17.450 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX [IX_Workers_DepartmentId] ON [Workers] ([DepartmentId]);
+info: 26.10.2022 09:09:17.451 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE [CarShowroomWorker] ADD CONSTRAINT [FK_CarShowroomWorker_Workers_WorkersWorkerId] FOREIGN KEY ([WorkersWorkerId]) REFERENCES [Workers] ([WorkerId]) ON DELETE CASCADE;
+info: 26.10.2022 09:09:17.451 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE [Departments] ADD CONSTRAINT [FK_Departments_Workers_HeadManagerId] FOREIGN KEY ([HeadManagerId]) REFERENCES [Workers] ([WorkerId]) ON DELETE NO ACTION;

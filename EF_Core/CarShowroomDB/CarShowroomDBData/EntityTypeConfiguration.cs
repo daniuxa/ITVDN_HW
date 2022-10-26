@@ -30,6 +30,9 @@ namespace CarShowroomDBData
     {
         public void Configure(EntityTypeBuilder<Automobile> builder)
         {
+            builder.HasKey(x => x.VIN);
+            builder.Property(x => x.VIN);
+
             builder.Property(x => x.ProdDate).HasDefaultValue(DateTime.Now);
             builder.HasMany(x => x.CarShowrooms).WithMany(y => y.Automobiles).UsingEntity<Avaibility>
                 (b => b.HasOne(x => x.CarShowroom).WithMany(y => y.Avaibilities).HasForeignKey(x => x.CarShowroomId),
@@ -43,7 +46,7 @@ namespace CarShowroomDBData
         {
             builder.HasCheckConstraint("CK_Workers_Phone", "Phone LIKE '(0[0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'");
             builder.HasCheckConstraint("CK_Workers_Salary", "Salary > 0");
-            builder.HasOne(x => x.Department).WithMany().HasForeignKey("DepartmentId").OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(x => x.Department).WithMany(y => y.Workers).HasForeignKey("DepartmentId").OnDelete(DeleteBehavior.Restrict);
         }
     }
 
@@ -51,9 +54,9 @@ namespace CarShowroomDBData
     {
         public void Configure(EntityTypeBuilder<Department> builder)
         {
-            //builder.HasOne(x => x.HeadManager).WithMany().OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(x => x.HeadManager).WithMany(y => y.DepartmentsHead).OnDelete(DeleteBehavior.Restrict);
             //builder.HasMany(x => x.Workers).WithOne().OnDelete(DeleteBehavior.Restrict);
-            builder.HasOne(x => x.HeadManager).WithOne().OnDelete(DeleteBehavior.Restrict);
+            //builder.HasOne(x => x.HeadManager).WithOne().OnDelete(DeleteBehavior.Restrict);
         }
     }
 

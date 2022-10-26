@@ -18,7 +18,7 @@ namespace CarShowroomDbData
         public DbSet<Engine> Engines { get; set; }
         public DbSet<Model> Models { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
-        public DbSet<HeadManager> HeadManagers { get; set; }
+       //public DbSet<HeadManager> HeadManagers { get; set; }
 
         private StreamWriter streamWriter = new StreamWriter("InfoLogs.log", append: false);
 
