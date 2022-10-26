@@ -11,12 +11,10 @@ namespace CarShowroomDomain
     public class Department
     {
         public int DepartmentId { get; set; }
-        [Required]
         public string Name { get; set; }
 
-        [ForeignKey("HeadManager")]
-        public int HeadManagerId { get; set; }
-        public Worker HeadManager { get; set; }
+        public List<Worker> HeadManagers { get; set; }
+
         public List<Worker> Workers { get; set; }
     }
 }

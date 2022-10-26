@@ -9,16 +9,19 @@ namespace CarShowroomDomain
 {
     public class Automobile
     {
-        //[Key]
-        [MaxLength(17)]
-        [MinLength(17)]
+        //Key
         public string VIN { get; set; }
+
         public DateTime ProdDate { get; set; }
         public string BodyType { get; set; }
         public string Color { get; set; }
-        public List<Order> Orders { get; set; }
-        public List<CarShowroom> CarShowrooms { get; set; }
-        public List<Avaibility> Avaibilities { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
+        
+        //Relation directly to CarShowoom table
+        public List<CarShowroom> CarShowrooms { get; set; } = new List<CarShowroom>();
+        //Relation through the table Avaibility to CarShowroomtable 
+        public List<Avaibility> Avaibilities { get; set; } = new List<Avaibility>();
+
         public Brand Brand { get; set; }
         public int BrandId { get; set; }
 
@@ -27,12 +30,5 @@ namespace CarShowroomDomain
 
         public Equipment Equipment { get; set; }
         public int EquipmentId { get; set; }
-
-        public Automobile()
-        {
-            Orders = new List<Order>();
-            CarShowrooms = new List<CarShowroom>();
-            Avaibilities = new List<Avaibility>();
-        }
     }
 }

@@ -10,19 +10,12 @@ namespace CarShowroomDomain
     public class Engine
     {
         public int EngineId { get; set; }
-        [Required]
         public string Name { get; set; }
         public double EngineCapacity { get; set; }
         public int Power { get; set; }
-        [Required]
         public string FuelType { get; set; }
         public Company Company { get; set; }
         public int CompanyId { get; set; }
-        public List<Equipment> Equipments { get; set; }
-
-        public Engine()
-        {
-            Equipments = new List<Equipment>();
-        }
+        public List<Equipment> Equipments { get; set; } = new List<Equipment>();
     }
 }

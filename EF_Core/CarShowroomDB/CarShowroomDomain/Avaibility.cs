@@ -10,7 +10,6 @@ namespace CarShowroomDomain
     public class Avaibility
     {
         public Automobile Automobile { get; set; }
-        [ForeignKey("Automobile")]
         public string VINAuto { get; set; }
 
         public CarShowroom CarShowroom { get; set; }

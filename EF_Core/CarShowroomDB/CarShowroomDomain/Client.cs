@@ -10,23 +10,12 @@ namespace CarShowroomDomain
     public class Client
     {
         public int ClientId { get; set; }
-
-        [Required]
         public string FName { get; set; }
-
-        [Required]
         public string MName { get; set; }
-
-        [Required]
         public string LName { get; set; }
-
-        [Required]
-        [MaxLength(15)]
-        [MinLength(15)]
         public string Phone { get; set; }
-
         public string? Email { get; set; }
 
-        public ICollection<Order> Orders { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order>();
     }
 }

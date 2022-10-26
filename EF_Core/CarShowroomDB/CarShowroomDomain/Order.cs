@@ -25,7 +25,6 @@ namespace CarShowroomDomain
         public DateTime PurchaseDateTime { get; set; }
 
         public Client Client { get; set; }
-        [Required]
         public int ClientId { get; set; }
 
         public string VinAuto { get; set; }

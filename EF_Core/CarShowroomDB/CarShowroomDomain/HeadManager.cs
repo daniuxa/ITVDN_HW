@@ -9,9 +9,8 @@ namespace CarShowroomDomain
 {
     public class HeadManager : Worker
     {
-        public Department ManagedDepartment { get; set; }
-        [ForeignKey("ManagedDepartment")]
-        public int ManagedDepartmentId { get; set; }
+        public List<Department> ManagedDepartments { get; set; }
+
         public string Email { get; set; }
     }
 }

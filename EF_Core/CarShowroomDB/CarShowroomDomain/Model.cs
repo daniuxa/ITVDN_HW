@@ -10,17 +10,14 @@ namespace CarShowroomDomain
     public class Model
     {
         public int ModelId { get; set; }
-        [Required]
         public string Name { get; set; }
         public int ProdYearFrom { get; set; }
-        public string ProdYearTo { get; set; }
+        public int ProdYearTo { get; set; }
+
         public Brand Brand { get; set; }
         public int BrandId { get; set; }
-        public List<Equipment> Equipments { get; set; }
 
-        public Model()
-        {
-            Equipments = new List<Equipment>();
-        }
+        public List<Equipment> Equipments { get; set; } = new List<Equipment>();
+        public List<Automobile> Automobiles { get; set; } = new List<Automobile>();
     }
 }

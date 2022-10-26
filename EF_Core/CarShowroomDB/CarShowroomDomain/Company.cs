@@ -9,17 +9,12 @@ namespace CarShowroomDomain
 {
     public class Company
     {
-        [Key]
+        //Key
         public string Name { get; set; }
+
         public string? SiteComp { get; set; }
 
-        public List<Engine> Engines { get; set; }
-        public List<Brand> Brands { get; set; }
-
-        public Company()
-        {
-            Engines = new List<Engine>();
-            Brands = new List<Brand>();
-        }
+        public List<Engine> Engines { get; set; } = new List<Engine>();
+        public List<Brand> Brands { get; set; } = new List<Brand>();
     }
 }
