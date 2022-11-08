@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarShowroomDomain
+﻿namespace CarShowroomDomain
 {
     public class HeadManager : Worker
     {
-        public List<Department> ManagedDepartments { get; set; }
+        public List<Department> ManagedDepartments { get; set; } = new();
 
-        public string Email { get; set; }
+        public string Email { get; set; } = String.Empty;
     }
 }

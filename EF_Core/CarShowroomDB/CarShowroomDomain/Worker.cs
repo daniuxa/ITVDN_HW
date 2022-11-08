@@ -1,28 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace CarShowroomDomain
+﻿namespace CarShowroomDomain
 {
     public class Worker
     {
         public int WorkerId { get; set; }
-        public string FName { get; set; }
-        public string MName { get; set; }
-        public string LName { get; set; }
-        public string Phone { get; set; }
+        public string FName { get; set; } = String.Empty;
+        public string MName { get; set; } = String.Empty;
+        public string LName { get; set; } = String.Empty;
+        public string Phone { get; set; } = String.Empty;
         public decimal Salary { get; set; }
         public DateTime BirthDate { get; set; }
 
-        public Department Department { get; set; }
+        public Department Department { get; set; } = null!;
         public int DepartmentId { get; set; }
 
-        public List<Department> HeadOfDepartments { get; set; }
-        public List<Order> Orders { get; set; }
-        public List<CarShowroom> CarShowrooms { get; set; }
+        //public List<Department> HeadOfDepartments { get; set; }
+        public List<Order> Orders { get; set; } = new();
+        public List<CarShowroom> CarShowrooms { get; set; } = new();
     }
 }

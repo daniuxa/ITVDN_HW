@@ -74,3 +74,6 @@ C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Deb
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\CarShowroomDomain.pdb
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\Humanizer.dll
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\appsettings.json
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDB\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

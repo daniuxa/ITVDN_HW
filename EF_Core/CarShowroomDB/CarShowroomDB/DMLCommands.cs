@@ -1,10 +1,5 @@
 ﻿using CarShowroomDomain;
 using CarShowroomDbData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarShowroomDB
@@ -33,10 +28,10 @@ namespace CarShowroomDB
                 #endregion
 
                 #region Models
-                Model PassatB8 = new Model() { Name = "Passat B8", ProdYearFrom = 2015, ProdYearTo = "none", Brand = Volkswagen };
-                Model A7 = new Model() { Name = "A7 2018", ProdYearFrom = 2018, ProdYearTo = "none", Brand = Audi };
-                Model Camry = new Model() { Name = "Camry XV70", ProdYearFrom = 2017, ProdYearTo = "none", Brand = Toyota };
-                Model Civic = new Model() { Name = "Civic 2021", ProdYearFrom = 2021, ProdYearTo = "none", Brand = Honda };
+                Model PassatB8 = new Model() { Name = "Passat B8", ProdYearFrom = 2015, Brand = Volkswagen };
+                Model A7 = new Model() { Name = "A7 2018", ProdYearFrom = 2018, Brand = Audi };
+                Model Camry = new Model() { Name = "Camry XV70", ProdYearFrom = 2017, Brand = Toyota };
+                Model Civic = new Model() { Name = "Civic 2021", ProdYearFrom = 2021, Brand = Honda };
 
                 context.Models.AddRange(PassatB8, A7, Camry, Civic);
                 #endregion
@@ -77,9 +72,13 @@ namespace CarShowroomDB
             {
                 var automobiles = context.Automobiles;
                 Automobile? automobile = automobiles.Where(x => x.Color == "Black").FirstOrDefault();
-                automobile.Color = "Blue";
+                if (automobile != null)
+                {
+                    automobile.Color = "Blue";
+                }
             }
         }
+
         static public void SelectFst()
         {
             using (CarShowroomContext context = new CarShowroomContext())
@@ -104,7 +103,7 @@ namespace CarShowroomDB
 
                 Console.WriteLine(new String('-', 40));
 
-                var third = context.Automobiles.Include(x => x.Brand).Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1));
+                var third = context.Automobiles.Include(x => x.Brand).Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1)).ToList();
 
                 foreach (var item in third)
                 {
@@ -113,7 +112,7 @@ namespace CarShowroomDB
 
                 Console.WriteLine(new String('-', 40));
 
-                //var frth = context.Automobiles.Join().Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1));
+                //var frth = context.Automobiles.Join().Where(x => x.ProdDate < DateTime.Now && x.ProdDate > new DateTime(2020, 1, 1)).ToList();
                 var frth = from automobile in context.Automobiles
                            join brand in context.Brands on automobile.BrandId equals brand.BrandId
                            where automobile.ProdDate < DateTime.Now && automobile.ProdDate > new DateTime(2020, 1, 1)
@@ -128,7 +127,7 @@ namespace CarShowroomDB
 
                 Console.WriteLine(new String('-', 40));
 
-                var fifth = context.Automobiles.Include(x => x.Brand).Where(x => EF.Functions.Like(x.BodyType, "Se%"));
+                var fifth = context.Automobiles.Include(x => x.Brand).Where(x => EF.Functions.Like(x.BodyType, "Se%")).ToList();
 
                 foreach (var item in fifth)
                 {
@@ -141,7 +140,7 @@ namespace CarShowroomDB
         {
             using (CarShowroomContext context = new CarShowroomContext())
             {
-                var Union = context.Automobiles.Select(p => new { ProdYear = p.ProdDate.Year}).Union(context.Models.Select(y => new {ProdYear = y.ProdYearFrom}));
+                var Union = context.Automobiles.Select(p => new { ProdYear = p.ProdDate.Year}).Union(context.Models.Select(y => new {ProdYear = y.ProdYearFrom})).ToList();
 
                 foreach (var item in Union)
                 {

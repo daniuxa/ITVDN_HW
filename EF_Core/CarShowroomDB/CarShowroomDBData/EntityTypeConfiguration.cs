@@ -1,11 +1,6 @@
 ﻿using CarShowroomDomain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarShowroomDBData
 {
@@ -15,6 +10,7 @@ namespace CarShowroomDBData
         {
             builder.HasCheckConstraint("CK_Clients_Phone", "Phone LIKE '(0[0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'");
             builder.HasCheckConstraint("CK_Clients_Email", "Email LIKE '%@%.%'");
+
             builder.Property(x => x.FName).IsRequired();
             builder.Property(x => x.MName).IsRequired();
             builder.Property(x => x.LName).IsRequired();
@@ -87,7 +83,7 @@ namespace CarShowroomDBData
         public void Configure(EntityTypeBuilder<Department> builder)
         {
             //Relation many to many between Worker - Department
-            builder.HasMany(x => x.HeadManagers).WithMany(y => y.HeadOfDepartments);
+            builder.HasMany(x => x.HeadManagers).WithMany(y => y.ManagedDepartments);
             
             //Make unique field
             builder.HasIndex(x => x.Name).IsUnique();
@@ -174,6 +170,7 @@ namespace CarShowroomDBData
         public void Configure(EntityTypeBuilder<Model> builder)
         {
             builder.Property(x => x.Name).IsRequired(true);
+            builder.Property(x => x.ProdYearTo).IsRequired(false);
 
             //Relation one to many between Brand - Model
             builder.HasOne(x => x.Brand).WithMany(y => y.Models).OnDelete(DeleteBehavior.Restrict);
@@ -181,11 +178,11 @@ namespace CarShowroomDBData
     }
 
 
-    /*public class HeadManagerEntityTypeConfiguration : IEntityTypeConfiguration<HeadManager>
+    public class HeadManagerEntityTypeConfiguration : IEntityTypeConfiguration<HeadManager>
     {
         public void Configure(EntityTypeBuilder<HeadManager> builder)
         {
             builder.HasMany(x => x.ManagedDepartments).WithMany(y => y.HeadManagers);
         }
-    }*/
+    }
 }

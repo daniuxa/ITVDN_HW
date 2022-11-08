@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarShowroomDomain
+﻿namespace CarShowroomDomain
 {
     public class CarShowroom
     {
         public int CarShowroomId { get; set; }
-        public string City { get; set; }
-        public string Street { get; set; }
-        public string House { get; set; }
+        public string City { get; set; } = String.Empty;
+        public string Street { get; set; } = String.Empty;
+        public string House { get; set; } = String.Empty;
 
-        public List<Worker> Workers { get; set; }
-        public List<Automobile> Automobiles { get; set; }
-        public List<Avaibility> Avaibilities { get; set; }
+        public List<Worker> Workers { get; set; } = new();
+        public List<Automobile> Automobiles { get; set; } = new();
+        public List<Avaibility> Avaibilities { get; set; } = new();
 
     }
 }
