@@ -1,7 +1,5 @@
 ﻿using CarShowroomDbData;
+using Microsoft.EntityFrameworkCore;
 
-using (CarShowroomContext context = new CarShowroomContext())
-{
-    context.Database.EnsureDeleted();
-    context.Database.EnsureCreated();
-}
+var optionsBuilder = new DbContextOptionsBuilder<CarShowroomContext>();
+var options = optionsBuilder.Options;

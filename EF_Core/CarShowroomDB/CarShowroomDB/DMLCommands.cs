@@ -6,9 +6,11 @@ namespace CarShowroomDB
 {
     static public class DMLCommands
     {
+        static private DbContextOptionsBuilder<CarShowroomContext> optionsBuilder = new DbContextOptionsBuilder<CarShowroomContext>();
+        static private DbContextOptions options = optionsBuilder.Options;
         static public void Add()
         {
-            using (CarShowroomContext context = new CarShowroomContext())
+            using (CarShowroomContext context = new CarShowroomContext(options))
             {
                 #region Companies
                 Company VAG = new Company() { Name = "VAG", SiteComp = "vag-group.com" };
@@ -68,7 +70,7 @@ namespace CarShowroomDB
 
         static public void Update()
         {
-            using (CarShowroomContext context = new CarShowroomContext())
+            using (CarShowroomContext context = new CarShowroomContext(options))
             {
                 var automobiles = context.Automobiles;
                 Automobile? automobile = automobiles.Where(x => x.Color == "Black").FirstOrDefault();
@@ -81,7 +83,7 @@ namespace CarShowroomDB
 
         static public void SelectFst()
         {
-            using (CarShowroomContext context = new CarShowroomContext())
+            using (CarShowroomContext context = new CarShowroomContext(options))
             {
                 var Distinct = context.Automobiles.Select(y => new
                 {
@@ -138,7 +140,7 @@ namespace CarShowroomDB
 
         static public void SelectSnd()
         {
-            using (CarShowroomContext context = new CarShowroomContext())
+            using (CarShowroomContext context = new CarShowroomContext(options))
             {
                 var Union = context.Automobiles.Select(p => new { ProdYear = p.ProdDate.Year}).Union(context.Models.Select(y => new {ProdYear = y.ProdYearFrom})).ToList();
 
@@ -179,7 +181,7 @@ namespace CarShowroomDB
 
         static public void SelectAgregate()
         {
-            using (CarShowroomContext context = new CarShowroomContext())
+            using (CarShowroomContext context = new CarShowroomContext(options))
             {
                 int AmountCars = context.Automobiles.Count();
                 Console.WriteLine(AmountCars);

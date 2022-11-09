@@ -15,4 +15,3 @@ C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDBData\bin
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDBData\obj\Debug\net6.0\CarShowroomDBData.csproj.CopyComplete
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDBData\bin\Debug\net6.0\CarShowroomDBData.runtimeconfig.json
 C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDBData\obj\Debug\net6.0\CarShowroomDBData.genruntimeconfig.cache
-C:\Users\saliv\source\repos\ITVDN_HW\EF_Core\CarShowroomDB\CarShowroomDBData\bin\Debug\net6.0\appsettings.json

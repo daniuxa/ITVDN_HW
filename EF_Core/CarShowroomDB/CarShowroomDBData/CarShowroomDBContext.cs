@@ -20,9 +20,14 @@ namespace CarShowroomDbData
         public DbSet<Equipment> Equipments { get; set; } = null!;
         public DbSet<HeadManager> HeadManagers { get; set; } = null!;
 
-        private StreamWriter streamWriter = new StreamWriter("InfoLogs.log", append: false);
+        private readonly StreamWriter streamWriter = new StreamWriter("InfoLogs.log", append: false);
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public CarShowroomContext(DbContextOptions options) : base(options)
+        {
+            //Database.EnsureCreated();
+        }
+
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var configuration = new ConfigurationBuilder().AddUserSecrets<CarShowroomContext>().Build();
             //var connectionString = configuration.GetConnectionString("CarShowroom");
@@ -35,7 +40,7 @@ namespace CarShowroomDbData
             optionsBuilder.UseSqlServer(connectionString!).
                 LogTo(streamWriter.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information).
                 EnableSensitiveDataLogging();
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
