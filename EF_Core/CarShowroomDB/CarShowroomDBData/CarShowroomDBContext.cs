@@ -40,6 +40,13 @@ namespace CarShowroomDbData
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CarShowroomContext).Assembly);
+            /*modelBuilder.Entity<Company>().HasData(
+                new Company[]
+                {
+                    new Company() { Name = "VAG", SiteComp = "vag-group.com" },
+                    new Company() { Name = "Toyota", SiteComp = "Toyota.com" },
+                    new Company() { Name = "Honda", SiteComp = "Honda.com" }
+                });*/
         }
         public override void Dispose()
         {
