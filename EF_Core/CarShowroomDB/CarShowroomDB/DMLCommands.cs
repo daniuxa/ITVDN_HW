@@ -6,9 +6,9 @@ namespace CarShowroomDB
 {
     static public class DMLCommands
     {
-        static private DbContextOptionsBuilder<CarShowroomContext> optionsBuilder = new DbContextOptionsBuilder<CarShowroomContext>();
-        static private DbContextOptions options = optionsBuilder.Options;
-        static public void Add()
+        /*static private DbContextOptionsBuilder<CarShowroomContext> optionsBuilder = new DbContextOptionsBuilder<CarShowroomContext>();
+        static private DbContextOptions options = optionsBuilder.Options;*/
+        static public void Add(DbContextOptions options)
         {
             using (CarShowroomContext context = new CarShowroomContext(options))
             {
@@ -68,7 +68,61 @@ namespace CarShowroomDB
 
         }
 
-        static public void Update()
+        static public void AddForTest(DbContextOptions options)
+        {
+            using (CarShowroomContext context = new CarShowroomContext(options))
+            {
+                Company? VAG = context.Companies.Where(c => c.Name == "VAG").FirstOrDefault();
+                Company? ToyotaComp = context.Companies.Where(c => c.Name == "Toyota").FirstOrDefault();
+
+                Engine ElectricVAG = new Engine() { Name = "ElectricMove", EngineCapacity = 0, Power = 250, FuelType = "Electrical", Company = VAG };
+                Engine ElectricToyota = new Engine() { Name = "ElectricCore", EngineCapacity = 0, Power = 220, FuelType = "Electrical", Company = ToyotaComp };
+
+                context.Engines.AddRange(ElectricVAG, ElectricToyota);
+
+                Brand? Toyota = context.Brands.Where(c => c.Name == "Toyota").FirstOrDefault();
+                Brand? Volkswagen = context.Brands.Where(c => c.Name == "Volkswagen").FirstOrDefault();
+
+                Model ToyotaEl = new Model() { Name = "ToyotaEl", ProdYearFrom = 2017, Brand = Toyota };
+                Model VolkswagenEl = new Model() { Name = "VolkswagenEl", ProdYearFrom = 2021, Brand = Volkswagen };
+
+                context.Models.AddRange(VolkswagenEl, ToyotaEl);
+
+                Equipment ToyotaElEq = new Equipment() { Name = "ToyotaElEq", Engine = ElectricToyota, Gearbox = "Automat", Model = ToyotaEl, Price = 25000, Transmission = "FWD" };
+                Equipment VolkswagenElEq = new Equipment() { Name = "VolkswagenElEq", Engine = ElectricVAG, Gearbox = "Automat", Model = VolkswagenEl, Price = 25000, Transmission = "FWD" };
+                
+                context.Equipments.AddRange(VolkswagenElEq, ToyotaElEq);
+
+                Automobile ToyotaElCar = new Automobile() { VIN = "YAUQRW34GEN060125", Brand = Toyota, Model = ToyotaEl, Equipment = ToyotaElEq, ProdDate = new DateTime(2018, 9, 11), BodyType = "Sedan", Color = "Grey" };
+                Automobile VolkswagenElCar = new Automobile() { VIN = "YAUQRW34GEN060126", Brand = Volkswagen, Model = VolkswagenEl, Equipment = VolkswagenElEq, ProdDate = new DateTime(2019, 10, 19), BodyType = "Sedan", Color = "Black" };
+
+                context.Automobiles.AddRange(VolkswagenElCar, ToyotaElCar);
+
+                context.SaveChanges();
+            }
+
+        }
+
+        static public void AddOrdersClients(DbContextOptions options)
+        {
+            using (CarShowroomContext context = new CarShowroomContext(options))
+            {
+                Client? client1 = context.Clients.Where(x => x.FName == "FName1").FirstOrDefault();
+                Client? client2 = context.Clients.Where(x => x.FName == "FName2").FirstOrDefault();
+
+                Automobile? automobile1 = context.Automobiles.Where(x => x.VIN == "YAUQRW34GEN060125").FirstOrDefault();
+                Automobile? automobile2 = context.Automobiles.Where(x => x.VIN == "YAUQRW34GEN060126").FirstOrDefault();
+
+                Order order1 = new Order { Automobile = automobile1, Client = client1, OrderDateTime = DateTime.Now };
+                Order order2 = new Order { Automobile = automobile2, Client = client2, OrderDateTime = DateTime.Now };
+
+                context.Orders.AddRange(order1, order2);
+                context.SaveChanges();
+            }
+
+        }
+
+        static public void Update(DbContextOptions options)
         {
             using (CarShowroomContext context = new CarShowroomContext(options))
             {
@@ -81,7 +135,7 @@ namespace CarShowroomDB
             }
         }
 
-        static public void SelectFst()
+        static public void SelectFst(DbContextOptions options)
         {
             using (CarShowroomContext context = new CarShowroomContext(options))
             {
@@ -138,7 +192,7 @@ namespace CarShowroomDB
             }
         }
 
-        static public void SelectSnd()
+        static public void SelectSnd(DbContextOptions options)
         {
             using (CarShowroomContext context = new CarShowroomContext(options))
             {
@@ -179,7 +233,7 @@ namespace CarShowroomDB
             }
         }
 
-        static public void SelectAgregate()
+        static public void SelectAgregate(DbContextOptions options)
         {
             using (CarShowroomContext context = new CarShowroomContext(options))
             {
@@ -196,6 +250,32 @@ namespace CarShowroomDB
                 Console.WriteLine("Max: " + MaxPrice);
                 Console.WriteLine("Avg: " + AvgPrice);
                 Console.WriteLine("Sum: " + SumPrice);
+            }
+        }
+
+        /*Бренди, які за якийсь період часу продали найбільшу кількість автомобілів з ел. двигунами*/
+        static public void BrandsWithMostSalesOfElectricCars(DbContextOptions options, DateTime dateTimeFrom, DateTime dateTimeTo)
+        {
+            using (CarShowroomContext context = new CarShowroomContext(options))
+            {
+                var allOrders = context.Orders.
+                    Where(x => x.OrderDateTime > dateTimeFrom && x.OrderDateTime < dateTimeTo).
+                    Join(context.Automobiles, u => u.VinAuto, c => c.VIN, (u, c) => new { BrandId = c.BrandId, EquipmentId = c.EquipmentId }).
+                    Join(context.Brands, u => u.BrandId, c => c.BrandId, (u, c) => new { BrandName = c.Name, EquipmentId = u.EquipmentId}).
+                    Join(context.Equipments, u => u.EquipmentId, c => c.EquipmentId, (u, c) => new { BrandName = u.BrandName, EngineId = c.EngineId}).
+                    Join(context.Engines, u => u.EngineId, c => c.EngineId, (u, c) => new { BrandName = u.BrandName, FuelType = c.FuelType}).
+                    Where(x => x.FuelType == "Electrical").
+                    GroupBy(x => x.BrandName).
+                    Select(x => new {x.Key, Count = x.Count()}).
+                    OrderByDescending(x => x.Count).
+                    ToList();
+                int maxSold = allOrders.Max(x => x.Count);
+                var bestBrands = allOrders.Where(x => x.Count == maxSold);
+
+                foreach (var item in bestBrands)
+                {
+                    Console.WriteLine(item.Key + " " + item.Count);
+                }
             }
         }
     }

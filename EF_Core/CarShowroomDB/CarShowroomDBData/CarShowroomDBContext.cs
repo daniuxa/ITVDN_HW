@@ -27,7 +27,7 @@ namespace CarShowroomDbData
             //Database.EnsureCreated();
         }
 
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var configuration = new ConfigurationBuilder().AddUserSecrets<CarShowroomContext>().Build();
             //var connectionString = configuration.GetConnectionString("CarShowroom");
@@ -40,7 +40,7 @@ namespace CarShowroomDbData
             optionsBuilder.UseSqlServer(connectionString!).
                 LogTo(streamWriter.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information).
                 EnableSensitiveDataLogging();
-        }*/
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
