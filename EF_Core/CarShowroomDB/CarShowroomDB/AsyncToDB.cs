@@ -26,5 +26,17 @@ namespace CarShowroomDB
                 }         
             }
         }
+
+        public async Task AsyncRead()
+        {
+            using (CarShowroomContext context = new CarShowroomContext(options))
+            {
+                var list = await context.Clients.ToListAsync();
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item.LName);
+                }
+            }
+        }
     }
 }
