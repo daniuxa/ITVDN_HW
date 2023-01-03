@@ -131,6 +131,7 @@ namespace CarShowroomDB
                 if (automobile != null)
                 {
                     automobile.Color = "Blue";
+                    context.SaveChanges();
                 }
             }
         }
